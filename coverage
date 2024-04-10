@@ -1,0 +1,27 @@
+mode: set
+minicache/geecache/byteview.go:9.29,11.2 1 0
+minicache/geecache/byteview.go:14.38,16.2 1 0
+minicache/geecache/byteview.go:19.35,21.2 1 0
+minicache/geecache/byteview.go:24.34,28.2 3 0
+minicache/geecache/cache.go:15.49,19.18 3 0
+minicache/geecache/cache.go:19.18,21.3 1 0
+minicache/geecache/cache.go:22.2,22.23 1 0
+minicache/geecache/cache.go:25.59,28.18 3 0
+minicache/geecache/cache.go:28.18,30.3 1 0
+minicache/geecache/cache.go:31.2,31.33 1 0
+minicache/geecache/cache.go:31.33,33.3 1 0
+minicache/geecache/cache.go:34.2,34.8 1 0
+minicache/geecache/geecache.go:9.53,11.2 1 1
+minicache/geecache/lru/lru.go:27.64,34.2 1 1
+minicache/geecache/lru/lru.go:43.56,44.33 1 1
+minicache/geecache/lru/lru.go:44.33,50.3 3 1
+minicache/geecache/lru/lru.go:51.2,51.8 1 1
+minicache/geecache/lru/lru.go:55.32,58.16 2 1
+minicache/geecache/lru/lru.go:58.16,65.25 5 1
+minicache/geecache/lru/lru.go:65.25,67.4 1 1
+minicache/geecache/lru/lru.go:72.46,73.33 1 1
+minicache/geecache/lru/lru.go:73.33,81.3 4 0
+minicache/geecache/lru/lru.go:81.8,87.3 3 1
+minicache/geecache/lru/lru.go:89.2,89.47 1 1
+minicache/geecache/lru/lru.go:89.47,91.3 1 1
+minicache/geecache/lru/lru.go:95.27,97.2 1 1
