@@ -36,8 +36,8 @@ func startCacheServer(addr string, addrs []string, gee *geecache.Group) {
 func startAPIServer(apiAddr string, gee *geecache.Group) {
 	http.Handle("/api", http.HandlerFunc(
 		func(w http.ResponseWriter, r *http.Request) {
-			key := r.URL.Query().Get("key")
-			view, err := gee.Get(key)
+			key := r.URL.Query().Get("key") // 从URL拿到key
+			view, err := gee.Get(key)       // 拿到对应的value, 这期间进行分布式的分发处理
 			if err != nil {
 				http.Error(w, err.Error(), http.StatusInternalServerError)
 				return

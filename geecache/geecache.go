@@ -81,13 +81,14 @@ func (g *Group) load(key string) (value ByteView, err error) {
 	viewi, err := g.loader.Do(key, func() (interface{}, error) {
 		if g.peers != nil {
 			if peer, ok := g.peers.PickPeer(key); ok {
+				// 从其他节点获取缓存
 				if value, err = g.getFromPeer(peer, key); err == nil {
 					return value, nil
 				}
 				log.Println("[GeeCache] Failed to get from peer", err)
 			}
 		}
-
+		// 其他节点也没找到, 从本地数据库拿去数据
 		return g.getLocally(key)
 	})
 
